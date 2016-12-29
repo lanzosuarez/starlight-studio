@@ -1,5 +1,79 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  section.hero.is-fullheight#head
+    .hero-body
+      canvas
+      .container.has-text-centered(style="top: -66px;")
+        .columns.is-vcentered
+          .column.is-8(style="margin: 0 auto;")
+            h1.title#title1
+              | Movement is here.
+            h1.title#title1
+              | And it is here to stay.
+            hr
+            h2.subtitle.sub.is-4(align="left")
+              | Starlight Studio is a no-contract high intensity boutique studio. Our highly effective cardio and strength group classes torches tons of calories in just 45 minutes: the ultimate workout for your high-pressure lifestyle. Don't be scared, our classes are suitable for all levels. 
+            br
+            p(align="left")
+              a.button.is-large.is-primary.is-outlined
+                | Contact Us
+  section.hero.is-fullheight.section2
+    .hero-body#img1
+      .columns
+        .column.is-6
+        .column.is-6
+          .container
+            h1.title#title1
+              | High intensity classes
+            hr
+            h2.subtitle.sub.is-4(align="left")
+              | Our workouts include interval treadmill routines, strength training utilizing plyo-boxes and free weights that are proven to ramp up your metabolism. You'll switch between 3 stations: 1) a non-motorised treadmill, 2) a plyo-box for plyometric exercises like box-jumps and 3) a 
+              | free-weight station for exercises with dumbells or bodyweight.
+            br
+
+  section.hero.is-fullheight
+    .hero-body#img1
+      .columns
+        .column.is-6.center
+          .container.section3
+            h1.title#title1
+              | Awesome Trainers
+            hr
+            h2.subtitle.sub.is-4(align="left")
+              | Our studio provides boundary-pushing HIIT classes featuring exceptional, world-class trainers. They teach powerful, rhythm based classes that inspire, change bodies and ultimately change lives. 
+            br
+        .column.is-6
+          figure.image
+            img(src='../../images/2.jpg', alt='')
+
+  section.hero.is-fullheight
+    .hero-body.section4
+      .columns
+        .column.is-6
+          .container
+            figure.image
+              img(src='../../images/3.jpg', alt='')
+        .column.is-6.center
+          h1.title#title1
+            | Prime Location
+          hr
+          h2.subtitle.sub.is-4(align="left")
+            | Our studio provides boundary-pushing HIIT classes featuring exceptional, world-class trainers. They teach powerful, rhythm based classes that inspire, change bodies and ultimately change lives. 
+          br
+  section.hero.is-fullheight
+    .hero-body.section5#img1
+      .columns
+        .column.is-6.center
+          .container.section3
+            h1.title#title1
+              | Flexible Pricing
+            hr
+            h2.subtitle.sub.is-4(align="left")
+              | No subscription, no hidden fees, no hassle. You can pay as you go, and you're never tied into a contract. Class schedules and reservations are all easily accessible online.
+            br
+        .column.is-6
+          figure.image
+            img(src='../../images/5.jpg', alt='')
+
+            

@@ -1,7 +1,54 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Starlight Studio
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+    link(rel='stylesheet', type='text/css', href='./stylesheets/bulma.css')
+    link(rel='stylesheet', type='text/css', href='./stylesheets/style.css')
+  
+  section#head
+    .container
+      nav.nav
+        .container
+          .nav-left
+            a.is-brand(href='#')
+              figure.image#starLogo
+                img(src='./images/ss.png' alt='SS logo')
+          span.nav-toggle
+            span
+            span
+            span
+          .nav-right.nav-menu
+            a.nav-item
+              | Home
+            a.nav-item
+              | About
+            a.nav-item
+              | Services
+            a.nav-item
+              | Contact Us
   body
-    block content
+  block content
+  
+  // Footer
+  .hero-foot
+      .container
+        .tabs.is-centered
+          ul
+            li
+              a(href='http://bulma.io') Made with bulma
+            li
+              a Copyright 2016 Bulma
+            li
+              a(href='http://unsplash.com') Images via unsplash
+
+  // Scripts
+  script(src='./js/jquery.min.js')
+  script(src='./js/jquery.scrolly.min.js')
+  script(src='./js/skel.min.js')
+  script(src='./js/util.js')
+  script(src='./js/main.js')
+  script(src='./js/script.js')

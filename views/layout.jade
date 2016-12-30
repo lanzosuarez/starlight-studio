@@ -21,13 +21,21 @@ html
             span
             span
             span
+            span
           .nav-right.nav-menu
             a.nav-item(href="/")
               | Home
             a.nav-item
               | About
-            a.nav-item(href="/personal-training")
-              | Services
+            .dropdown.nav-item
+               span Services
+                ul.dropdown-content
+                  li
+                    a(href='/personal-training') Personal Training
+                  li
+                    a(href='/group-training') Freestyle Group Training
+                  li
+                    a(href='/cardio-training') Cardio Training
             a.nav-item
               | Contact Us
   body

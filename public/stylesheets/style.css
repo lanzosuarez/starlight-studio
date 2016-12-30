@@ -98,6 +98,9 @@ canvas{
   border-left: 0px !important;
   text-align: center;
   }
+  .newspaper {
+    column-count: 1 !important;
+  }
 }
 /*------------------------------------------------------*/
 /*----------------------INDEX PAGE ---------------------*/
@@ -130,7 +133,21 @@ canvas{
   background-color: black;
   font:white;
 }
-
+.newspaper {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px; /* Firefox */
+  column-gap: 40px;
+  -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+  -moz-column-rule-style: solid; /* Firefox */
+  column-rule-style: solid;
+}
+.is-gray {
+  background-color: rgb(29, 29, 29) !important;
+  color: white !important;
+}
 /*--------------------------END-------------------------*/
 /*-------------------------FOOTER-----------------------*/
 .foot{

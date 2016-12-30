@@ -32,18 +32,19 @@ block content
 							strong  &nbsp; 41 Reviews
 
 						br
-						p
-							| Suspendisse sodales metus justo, ullamcorper iaculis purus interdum in. Sed ultricies enim felis, in interdum urna malesuada a. Morbi id ligula vel leo elementum dignissim quis vel purus. Donec iaculis, est ac maximus vestibulum, sapien mi lacinia urna, at laoreet felis lectus nec urna. Fusce egestas, neque vitae blandit scelerisque, leo arcu pellentesque risus, et volutpat neque nunc id massa. Aenean dapibus leo vel purus malesuada, eu ultrices nulla consequat. Duis erat orci, lobortis sed dictum id, pretium a nibh. Mauris pharetra ligula consequat gravida ornare.
+						p(align="justify")
+							| #{description}
 						br
 						table.table
+							p.title Benefits
 							tbody
 								tr
 									td.has-text-right
-										strong Item ID
+										strong Trainer
 									td 1234
 								tr
 									td.has-text-right
-										strong Seller
+										strong 
 									td jsmith
 								tr
 									td.has-text-right
@@ -53,12 +54,23 @@ block content
 									td.has-text-right
 										strong Views
 									td 3
+
+		section.hero.is-medium.is-gray.is-black
+			.hero-body
+				.container
+					h1.title
+						| Why 
+						= name
+					br
+					p.subtitle.is-9.newspaper(align="justify") 
+						= reason
+
  
 		.section
 			.container
 				.columns
 					.column.is-8
-						.title Other Services
+						.title Trainers
 					.column.is-4.has-text-right
 						a.button.is-active
 							i.fa.fa-th.title.is-5
@@ -69,40 +81,40 @@ block content
 					.column.is-4(align="center")
 						.card
 							.card-image
-								figure.image.is-4by3
-									img(src='http://placehold.it/300x225', alt='')
+								figure.image.is-3by5
+									img(src="#{pt1}")
 							.card-content
 								.media
 									.media-content
-										h3.title.is-5(align="center")= name
+										h3.title.is-5(align="center")= pt1_name
 								.content
-									| Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									| Phasellus nec iaculis mauris. 
+									p.is-6
+										= pt1_punchline
 
 					.column.is-4(align="center")
 						.card
 							.card-image
-								figure.image.is-4by3
-									img(src='http://placehold.it/300x225', alt='')
+								figure.image.is-3by5
+									img(src="#{pt2}")
 							.card-content
 								.media
 									.media-content
-										h3.title.is-5(align="center")= name
+										h3.title.is-5(align="center")= pt2_name
 								.content
-									| Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									| Phasellus nec iaculis mauris. 
+									p.is-6
+										= pt2_punchline
 
 					.column.is-4(align="center")
 						.card
 							.card-image
-								figure.image.is-4by3
-									img(src='http://placehold.it/300x225', alt='')
+								figure.image.is-3by5
+									img(src="#{pt3}")
 							.card-content
 								.media
 									.media-content
-										h3.title.is-5(align="center")= name
+										h3.title.is-5(align="center")= pt3_name
 								.content
-									| Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									| Phasellus nec iaculis mauris. 
+									p.is-6
+										= pt3_punchline
 
 

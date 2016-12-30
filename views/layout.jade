@@ -35,15 +35,21 @@ html
   
   // Footer
   .hero-foot
-      .container
-        .tabs.is-centered
-          ul
-            li
-              a(href='http://bulma.io') Made with bulma
-            li
-              a Copyright 2016 Bulma
-            li
-              a(href='http://unsplash.com') Images via unsplash
+    section.hero.is-small.foot
+      .hero-body
+        .container.footContainer
+          .columns
+            .column.is-6(align="center")
+              a.is-brand(href='#')
+                figure.image#starLogo
+                  img(src='./images/ss.png' alt='SS logo')
+              p Starilight Studio Copyright 2002. All rights reserved.
+            .column.is-6.footRight
+              h2 MANILA PHILIPPINES
+              h2 strlghtstdio@yahoo.com
+              h2 09155318566 
+              h2 6/F Regis Center, 327 Katipunan Avenue, Loyola Heights, Quezon City
+
 
   // Scripts
   script(src='./js/jquery.min.js')

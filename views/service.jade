@@ -17,7 +17,7 @@ block content
 						.image.is-2by2
 							img(src="#{img_src1}")
 					.column.is-5.is-offset-1
-						.title.is-2= name
+						h1.title#title2= name
 						p.title.is-3.has-text-muted #{price_range}
 
 						hr
@@ -35,25 +35,7 @@ block content
 						p(align="justify")
 							| #{description}
 						br
-						table.table
-							p.title Benefits
-							tbody
-								tr
-									td.has-text-right
-										strong Trainer
-									td 1234
-								tr
-									td.has-text-right
-										strong 
-									td jsmith
-								tr
-									td.has-text-right
-										strong Added
-									td 3 days ago
-								tr
-									td.has-text-right
-										strong Views
-									td 3
+						
 
 		section.hero.is-medium.is-gray.is-black
 			.hero-body

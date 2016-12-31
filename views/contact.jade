@@ -1,0 +1,32 @@
+extends layout
+
+block content
+	section.hero.is-fullheight#head.contact
+		.hero-body
+			canvas
+			.container.has-text-centered
+				.columns.is-vcentered
+					.column.is-8(style="margin: 0 auto;")
+						#offer.ccover
+							h2#title4 Contact Us
+						.container
+							#contactCon
+								.columns
+									.column.is-12
+										p.control.is-expanded
+											input.input(type='text', placeholder='Name' id='input')
+								.columns
+									.column.is-12
+										p.control.is-expanded
+											input.input(type='email', placeholder='Email' id='input')
+								.columns
+									.column.is-12
+										textarea.textarea(placeholder='Explain how we can help you' id='input')
+								.columns(align='left')
+									.column.is-6
+										p(align="left")
+											a.button.is-large.is-primary.is-outlined#inquire
+												| Send Message
+											a.button.is-large.is-danger.is-outlined#inquire
+												| Reset
+									

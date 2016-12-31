@@ -91,7 +91,8 @@ canvas{
     background: none;
   }
   #title1, 
-  #title2 {
+  #title2,
+  #title3 {
     font-size: 27px !important;
   }
   .sub {
@@ -113,6 +114,9 @@ canvas{
     padding: 10px !important;
     max-width: inherit !important;
   }
+  #quote{
+    font-size: 15px !important;
+  }
 
 
 }
@@ -132,8 +136,9 @@ canvas{
     padding: 10px !important;
   }
   .footRight{
-  border-left: 0px !important;
-  text-align: center;
+    border-left: 0px !important;
+    text-align: center;
+    color: #a0a09e;
   }
   .newspaper {
     column-count: 1 !important;
@@ -202,6 +207,24 @@ canvas{
     text-align: left;
 }
 /*--------------------------END-------------------------*/
+/*-------------------------ABOUT------------------------*/
+#containAbout{
+  max-width: 327px;
+  padding: 59px 9px;
+}
+#title3{
+  font-size: 58px;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  /* text-align: left; */
+}
+#quote{
+  font-size: 19px;
+  font-weight: 300;
+  font-style: italic;
+}
+/*------------------------------------------------------*/
 /*-------------------------FOOTER-----------------------*/
 .foot{
   background-color: rgba(0, 0, 0, 0.88);
@@ -209,9 +232,11 @@ canvas{
 .footContainer p{
     max-width: 182px;
     padding: 8px;
+    color: #a0a09e;
 }
 .footRight{
   border-left: 1px solid white;
   padding: 20px;
+  color: #a0a09e;
 }
 /*--------------------------END-------------------------*/

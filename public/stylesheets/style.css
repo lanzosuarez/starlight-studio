@@ -247,7 +247,7 @@ canvas{
   padding: 0px 13px 55px 13px;
   margin-bottom: 46px;
 }
-#input{
+.form-control{
      -webkit-appearance: none;
     -ms-appearance: none;
     background: rgba(39, 39, 39, 0.75);

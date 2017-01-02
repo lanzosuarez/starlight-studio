@@ -10,23 +10,36 @@ block content
 						#offer.ccover
 							h2#title4 Contact Us
 						.container
-							#contactCon
-								.columns
-									.column.is-12.col
-										p.control.is-expanded
-											input.input(type='text', placeholder='Name' id='input')
-								.columns
-									.column.is-12.col
-										p.control.is-expanded
-											input.input(type='email', placeholder='Email' id='input')
-								.columns
-									.column.is-12.col
-										textarea.textarea(placeholder='Explain how we can help you' id='input')
-								.columns(align='left')
-									.column.is-6.col
-										p(align="left")
-											a.button.is-large.is-primary.is-outlined#inquire
-												| Send Message
-											a.button.is-large.is-danger.is-outlined#inquire
-												| Reset
+							form.form-group#myForm
+								#contactCon
+									.columns
+										.column.is-12.col
+											p.control.is-expanded
+												input.input.form-control(type='text'
+															placeholder='Name' 
+															id='name' 
+															name="name")
+															
+									.columns
+										.column.is-12.col
+											p.control.is-expanded
+												input.input.form-control(
+													type='email'
+													placeholder='Email' 
+													id='email'
+													name='email')
+												
+									.columns
+										.column.is-12.col
+											textarea.textarea.form-control(placeholder='Explain how we can help you' id='textmessage' name="textmessage")
+									.columns(align='left')
+										.column.is-6.col
+											p(align="left")
+												a.button.is-large.is-primary.is-outlined#post
+													| Send Message
+												a.button.is-large.is-danger.is-outlined#reset
+													| Reset
+
+	script(src="https://code.jquery.com/jquery-3.1.1.min.js", integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=", crossorigin="anonymous")										
+	script(src="/js/validate.js" type="text/javascript")											
 									

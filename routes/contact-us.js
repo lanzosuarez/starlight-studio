@@ -39,7 +39,6 @@ router.route('/')
                     </u>
                     `,
         };
-
         // send mail with defined transport object 
         transporter.sendMail(mailOptions, function(error, info){
             if(error){
@@ -48,8 +47,6 @@ router.route('/')
             console.log('Message sent: ' + info.response);
             res.sendStatus(200);
         });
-
-        
     });
 
 module.exports = router;

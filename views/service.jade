@@ -1,102 +1,102 @@
 extends layout
 
 block content
-	.is-service
-		.section.product-header
-			.container
-				.columns
-					.column
-						span.title.is-3 Service ID 
-						span.title.is-3.has-text-muted  |
-						span.title.is-4.has-text-muted=    service_id
+    .is-service
+        .section.product-header
+            .container
+                .columns
+                    .column
+                        span.title.is-3 Service ID
+                        span.title.is-3.has-text-muted  |
+                        span.title.is-4.has-text-muted=    service_id
 
-		.section
-			.container
-				.columns
-					.column.is-6
-						.image.is-2by2
-							img(src="#{img_src1}")
-					.column.is-5.is-offset-1
-						h1.title#title2= name
-						p.title.is-3.has-text-muted #{price_range}
+        .section
+            .container
+                .columns
+                    .column.is-6
+                        .image.is-2by2
+                            img(src="#{img_src}")
+                    .column.is-5.is-offset-1
+                        h1.title#title2= name
+                        p.title.is-3.has-text-muted #{price_range}
 
-						hr
-						br
-						p
-							i.fa.fa-star.title.is-5(style='color:#ed6c63')
-							i.fa.fa-star.title.is-5(style='color:#ed6c63')
-							i.fa.fa-star.title.is-5(style='color:#ed6c63')
-							i.fa.fa-star.title.is-5
-							i.fa.fa-star.title.is-5
-							
-							strong  &nbsp; 41 Reviews
+                        hr
+                        br
+                        p
+                            i.fa.fa-star.title.is-5(style='color:#ed6c63')
+                            i.fa.fa-star.title.is-5(style='color:#ed6c63')
+                            i.fa.fa-star.title.is-5(style='color:#ed6c63')
+                            i.fa.fa-star.title.is-5
+                            i.fa.fa-star.title.is-5
 
-						br
-						p(align="justify")
-							| #{description}
-						br
-						
+                            strong  &nbsp; 41 Reviews
 
-		section.hero.is-medium.is-gray.is-black
-			.hero-body
-				.container
-					h1.title
-						| Why 
-						= name
-					br
-					p.subtitle.is-9.newspaper(align="justify") 
-						= reason
+                        br
+                        p(align="justify")
+                            | #{description}
+                        br
 
- 
-		.section
-			.container
-				.columns
-					.column.is-8
-						.title Trainers
-					.column.is-4.has-text-right
-						a.button.is-active
-							i.fa.fa-th.title.is-5
-						a.button
-							i.fa.fa-align-justify.title.is-5
-				hr
-				.columns
-					.column.is-4(align="center")
-						.card
-							.card-image
-								figure.image.is-3by5
-									img(src="#{pt1}")
-							.card-content
-								.media
-									.media-content
-										h3.title.is-5(align="center")= pt1_name
-								.content
-									p.is-6
-										= pt1_punchline
 
-					.column.is-4(align="center")
-						.card
-							.card-image
-								figure.image.is-3by5
-									img(src="#{pt2}")
-							.card-content
-								.media
-									.media-content
-										h3.title.is-5(align="center")= pt2_name
-								.content
-									p.is-6
-										= pt2_punchline
+        section.hero.is-medium.is-gray.is-black
+            .hero-body
+                .container
+                    h1.title
+                        | Why
+                        = name
+                    br
+                    p.subtitle.is-9.newspaper(align="justify")
+                        = reason
 
-					.column.is-4(align="center")
-						.card
-							.card-image
-								figure.image.is-3by5
-									img(src="#{pt3}")
-							.card-content
-								.media
-									.media-content
-										h3.title.is-5(align="center")= pt3_name
-								.content
-									p.is-6
-										= pt3_punchline
+
+        .section
+            .container
+                .columns
+                    .column.is-8
+                        .title Trainers
+                    .column.is-4.has-text-right
+                        a.button.is-active
+                            i.fa.fa-th.title.is-5
+                        a.button
+                            i.fa.fa-align-justify.title.is-5
+                hr
+                .columns
+                    .column.is-4(align="center")
+                        .card
+                            .card-image
+                                figure.image.is-3by5
+                                    img(src="#{pt1}")
+                            .card-content
+                                .media
+                                    .media-content
+                                        h3.title.is-5(align="center")= pt1_name
+                                .content
+                                    p.is-6
+                                        = pt1_punchline
+
+                    .column.is-4(align="center")
+                        .card
+                            .card-image
+                                figure.image.is-3by5
+                                    img(src="#{pt2}")
+                            .card-content
+                                .media
+                                    .media-content
+                                        h3.title.is-5(align="center")= pt2_name
+                                .content
+                                    p.is-6
+                                        = pt2_punchline
+
+                    .column.is-4(align="center")
+                        .card
+                            .card-image
+                                figure.image.is-3by5
+                                    img(src="#{pt3}")
+                            .card-content
+                                .media
+                                    .media-content
+                                        h3.title.is-5(align="center")= pt3_name
+                                .content
+                                    p.is-6
+                                        = pt3_punchline
 
 

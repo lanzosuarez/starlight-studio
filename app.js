@@ -17,6 +17,10 @@ var app = express();
 
 mongoose.connect('127.0.0.1:27017/starlight-services');
 
+//var url = process.env.MONGOLAB_URI || '127.0.0.1:27017/starlight-services'
+
+mongoose.connect(url);
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

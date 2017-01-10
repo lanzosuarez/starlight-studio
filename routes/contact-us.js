@@ -17,14 +17,14 @@ router.route('/')
             port: 465,
             secure: true, // use SSL 
             auth: {
-                user: 'lanzosuarez@gmail.com',
+                user: 'jamesmichael12345678910@gmail.com',
                 pass: 'bobotngacla'
             }
         });
 
         var mailOptions = {
             from: `${name} <${email}>`, // sender address 
-            to: 'lanzosuarez@gmail.com', // list of receivers 
+            to: 'jamesmichael12345678910@gmail.com', // list of receivers 
             subject: 'Website Inquiry', // Subject line 
             text: `You got an inquiry with the following details..\n 
                     name: ${name} \n

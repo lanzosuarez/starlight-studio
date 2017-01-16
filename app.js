@@ -15,8 +15,7 @@ var users = require('./routes/users');
 
 var app = express();
 
-
-var uri = proces.env.MONGOLAB_URI;
+var uri = process.env.MONGOLAB_URI || 'mongodb://lanzosuarez:bobotngacla1234@ds111529.mlab.com:11529/starlight';
 mongoose.connect(uri);
 
 app.set('views', path.join(__dirname, 'views'));

@@ -17,7 +17,7 @@ router.route('/')
             port: 465,
             secure: true, // use SSL 
             auth: {
-                user: 'jamesmichael12345678910@gmail.com',
+                user: 'lanzosuarez@gmail.com',
                 pass: 'bobotngacla'
             }
         });

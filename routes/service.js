@@ -3,14 +3,20 @@ var router = express.Router();
 
 var Services = require('../models/services');
 
+router.get("/all", (req, res)=>{
+    Services.find((err, doc)=>{
+        res.send(doc);
+    });
+});
+
 router.get("/:id", (req, res)=>{
-    var serviceNo = req.params.id;
-    Services.findOne({ serviceNo: serviceNo }, (err, doc)=>{
+    Services.findOne({serviceNo: req.params.id.toString()}, (err, doc)=>{
         if(err){
             return res.send("Error!");
         }
+        //res.send(doc)
         res.locals.service_id = doc.serviceId;
-        res.locals.name = doc.name;
+        res.locals.name = doc.serviceName;
         res.locals.price_range = doc.priceRange;
         res.locals.description = doc.description;
         res.locals.reason = doc.reason;
